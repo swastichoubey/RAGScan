@@ -38,6 +38,7 @@ The output is a simple report. It informs about what was found but the final act
 Chunking of input documents happens inside the engine, not the interfaces, so both the web app and the CLI hand raw documents to the engine, and Scanner is responsible for splitting them into chunks before running detectors, keeping that logic in one place rather than duplicated across interfaces.
 
 ![Architecture](docs/architecture.png)
+*Note: This image was generated using GPT-5.6 Luna's image generation system (DALL·E image generation)*
 
 ## Roadmap
 
