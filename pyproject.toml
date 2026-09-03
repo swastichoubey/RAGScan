@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rag-scanner-engine"
+version = "0.1.0"
+description = "ML-powered security scanner for RAG pipelines: prompt injection and PII leakage detection"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+dependencies = [
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+web = [
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+    "python-multipart>=0.0.9",
+]
+
+cli = [
+    "click>=0.81",
+    "rich>=13.7"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["rag_scanner_engine"]

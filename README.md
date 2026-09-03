@@ -43,7 +43,7 @@ Chunking of input documents happens inside the engine, not the interfaces, so bo
 ## Roadmap
 
 **Engine Maturity**  
-V0.1 \- Engine Scaffold (Detectors are currently stubs (pattern-match, not ML)) ← currently here  
+V0.1 \- Engine Scaffold (Detectors are currently stubs (pattern-match, not ML)) ← currently here (scaffold complete, verified with smoke test) 
 V0.2 \- PII Leakage Detector upgrade from regex to fine-tuned spaCy NER  
 V0.3 \- Prompt Injection Detector upgraded from regex/pattern-matching to fine-tuned DistilBERT 
 
